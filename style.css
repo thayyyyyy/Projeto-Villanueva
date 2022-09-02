@@ -1,23 +1,37 @@
-header {
-	background: rgb(189, 185, 185);
-	height: 200PX;
-	padding: 20px 0;
+@charset "utf-8";
+
+html {
+	width: 100%;
+	height: 100%;
 }
+header {
+	background: rgb(214, 213, 213);
+	height: 40PX;
+	padding: 20px 0;
+	width: 100%;
+}
+
 .cabecalho {
 	position: relative;
 	width: 940px;
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
+
 img {
 	text-align: right;
-	height: 200px;
-	width: 280px;
+	height: 480px;
+	width: 580px;	
+	position: relative;
+	display: block;
+	float: left;
+	display: table
 }
+
 nav {
 	position: absolute;
-	top: 110px;
-	right: 0;
+	top: 20px;
+	right: 0;	
+	width: 100%;
 }
 nav li {
 	display: inline;
@@ -27,45 +41,178 @@ nav a {
 	text-transform: uppercase;
 	color: black;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 15px;
 	text-decoration: none;
-	}
+	
+}
 
-.texto {
+a:hover {
+	text-decoration: underline;
+	color: rgb(50, 54, 54);
+}
+
+#logo img{
+	position: absolute;
+	width: 100px;
+	height: 80px;
+	top: 0px;
+	margin-left: 100px;
+}
+
+#logoesc img{
+	position: absolute;
+	width: 100px;
+	height: 80px;
+	top: 0px;
+	margin-left: 200px;
+}
+#imagem img{
+	position: absolute;
+	width: 100px;
+	height: 80px;
+	top: 0px;
+	margin-left: 1440px;
+}
+.principal {
+	padding: 60px;
+	height: auto;
 	text-align: justify;
 	font-size: 23px;
 }
 
-h1 {
-	padding: 5%;
+#escola {
+	display: flex;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	margin: -2px;
+	filter: brightness(225%);		
+}
+
+.titulo-secundario {
+	padding-left: 40px;
+	text-align: left;
+	color: rgb(7, 6, 6);
+	font-size: 20px;
+	font-weight: bold;
+}
+.titulo-principal {
+	padding-left: 20px;
 	text-align: center;
 	color: rgb(7, 6, 6);
+	font-size: 30px;
+	font-weight: bold;
 }
 
 body{
-	background: #FFFFFFFF
+	background: #FFFFFFFF;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
 }
 
 h2 {
-	text-align: center
+	text-align: left;
+	font-size: 20px;
+	margin: 30px;
+	color: rgb(7, 6, 6);
+	font-weight: bold;
 }
 
 p {
 	text-align: justify;
 	font-size: 20px;
 	margin: 30px;
-}
-
-em strong{
-				color: black;
+	text-indent: 50px;
 }
 
 footer {
-    position: absolute;
+    position: relative 0;
     bottom: 0px;
     width: 100%;
-	height: 80px;
-    background-color: rgb(189, 185, 185);
-    text-align: center;
-	font-size: 15px;
+	height: 20%;
+    background-color: rgb(214, 213, 213); 
 }
+
+.copyright {
+	color: #0f0f0f;
+	margin: 20px 0 0;
+	text-align: center;
+	font-size: 15px;
+	padding: 50px;
+}
+
+table {
+	margin-left: 250px;
+}
+
+thead {
+	background: #e9e6e6;	
+}
+
+td, th {
+	width: 400px;
+	height: 5px;
+	font-size: 15px;
+	text-align: justify; vertical-align: middle; 
+	padding: 6px 12px;
+	border: 1px solid #000000;
+}
+#fotos {
+	height: 100%;
+}
+#fotos img{
+	width: 400px;
+	height: 350px;
+   background-position: right, left;
+   padding: 20px;
+   margin: 30px;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: rgb(109, 108, 107);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: rgb(41, 40, 40);
+	transform: scale(1.2);
+}
+
+
+
