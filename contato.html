@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contatos</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+            <div class="cabecalho">				
+                <nav>
+					<ul>
+						<li><a href="index.html" title="Página Inicial">Página Inicial</a></li>
+           				<li><a href="historia.html" title="História do Grêmio Estudantil">Grêmio Estudantil</a></li>
+						<li><a href="Projetos.html" title="Projetos dos alunos">Projetos</a></li>
+						<li><a href="Sala de Recursos.html" title="Projetos da Sala de Recursos">Sala de Recursos</a></li>
+						<li><a href="contato.html" title="Contatos">Contatos</a></li>
+					</ul>
+                </nav>
+			</div>	
+			<div id="logo">
+				<img src="logo-CivicoMilitar.png">
+			</div>
+			<div id="logoesc">
+				<img src="logo-escola.png">
+			</div>
+			</header>	
+			<div class="principal">
+                <a href="index.html" title="Página Inicial">Voltar</a>
+
+					<h2 class="titulo-secundario">Colégio Cívico Militar Professor Francisco Villanueva</h2>
+					<h1 class="titulo-principal">IMPORTÂNCIA DA PARTICIPAÇÃO DO ALUNO NA ESCOLA</h1>
+				
+                <main>
+                    <form>
+                        <label for="nomesobrenome">Nome e sobrenome</label>
+                        <input type="text" id="nomesobrenome" class="input-padrao" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+        
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+        
+                        <label for="mensagem">Mensagem</label>
+                        <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+        
+                        <fieldset>
+                            <legend>Como prefere o nosso contato?</legend>
+                            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                            
+                            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                            
+                            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Qual horário prefere ser atendido?</legend>
+                            <select>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Noite</option>
+                            </select>
+                        </fieldset>
+        
+                        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+        
+                        <input type="submit" value="Enviar formulário" class="enviar">
+                    </form>
+        
+			</div>			
+			<br><br><br>
+			<footer> 
+				<p class="copyright">&copy; Copyright Colégio Estadual Cívico-Militar Prof. Francisco Villanueva - 2022</p>
+			</footer>
+    </body>
+</html>   
+			
